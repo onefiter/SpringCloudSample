@@ -1,12 +1,16 @@
-package com.onefiter.domain;
+package com.onefiter.pojo;
+
+
 
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
+
 
 @Entity
 @Table(name = "tb_user")
-public class User {
+public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;//主键id
