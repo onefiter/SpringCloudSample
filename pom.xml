@@ -11,6 +11,8 @@
     <modules>
 
         <module>user-provider</module>
+        <module>user-consumer</module>
+        <module>eureka-server</module>
     </modules>
 
     <properties>
