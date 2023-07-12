@@ -32,9 +32,11 @@ public class UserController {
 //        String url = "http://localhost:18081/user/find/"+id;
 //        return restTemplate.getForObject(url,User.class);
 
-        List<ServiceInstance> instances = discoveryClient.getInstances("user-provider");
-        ServiceInstance serviceInstance = instances.get(0);
-        String instanceUrl = "http://"+serviceInstance.getHost()+":"+serviceInstance.getPort()+"/user/find/"+id;
-        return restTemplate.getForObject(instanceUrl,User.class);
+//        List<ServiceInstance> instances = discoveryClient.getInstances("user-provider");
+//        ServiceInstance serviceInstance = instances.get(0);
+//        String instanceUrl = "http://"+serviceInstance.getHost()+":"+serviceInstance.getPort()+"/user/find/"+id;
+//        return restTemplate.getForObject(instanceUrl,User.class);
+        String url = "http://user-provider/user/find/"+id;
+        return restTemplate.getForObject(url,User.class);
     }
 }

@@ -10,8 +10,8 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka # EurekaServer的地址
   server:
-    # 对无效的服务进行剔除操作，单位是毫秒
-    eviction-interval-timer-in-ms: 5000
-    # 关闭自我保护模式（缺省为打开）
-    enable-self-preservation: false
+#    # 对无效的服务进行剔除操作，单位是毫秒
+#    eviction-interval-timer-in-ms: 5000
+#    # 关闭自我保护模式（缺省为打开）
+#    enable-self-preservation: false
 

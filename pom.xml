@@ -13,6 +13,7 @@
         <module>user-provider</module>
         <module>user-consumer</module>
         <module>eureka-server</module>
+        <module>user-provider-demo1</module>
     </modules>
 
     <properties>

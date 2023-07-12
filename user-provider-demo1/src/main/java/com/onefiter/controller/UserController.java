@@ -22,9 +22,9 @@ public class UserController {
      */
     @RequestMapping(value = "/find/{id}")
     public User findById(@PathVariable(value = "id") Integer id){
+        User user = userService.findByUserId(id);
+        user.setUsername(user + "     user-provider-demo1");
 
-        User user =  userService.findByUserId(id);
-        user.setUsername(user+"     user-provider");
         return user;
     }
 }
