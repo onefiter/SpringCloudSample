@@ -43,6 +43,8 @@ public class UserController {
         return restTemplate.getForObject(url,User.class);
     }
 
+
+
     /****
      * 服务降级处理方法
      * 当某个方法发生异常或者执行超时的时候，则直接让该方法处理用户的请求
