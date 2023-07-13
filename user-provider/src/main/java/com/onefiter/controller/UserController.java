@@ -23,6 +23,10 @@ public class UserController {
     @RequestMapping(value = "/find/{id}")
     public User findById(@PathVariable(value = "id") Integer id){
 
+        if (id == 3) {
+            throw new RuntimeException("抛出异常");
+        }
+
         User user =  userService.findByUserId(id);
         user.setUsername(user+"     user-provider");
         return user;
