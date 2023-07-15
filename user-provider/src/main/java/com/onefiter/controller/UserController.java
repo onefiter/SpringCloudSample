@@ -26,9 +26,14 @@ public class UserController {
         if (id == 3) {
             throw new RuntimeException("抛出异常");
         }
-
+//        try {
+//            System.out.println("正在睡觉");
+//            Thread.sleep(5000);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
         User user =  userService.findByUserId(id);
-        user.setUsername(user+"     user-provider");
+        user.setUsername(user.getUsername()+"--服务名字     user-provider");
         return user;
     }
 }
