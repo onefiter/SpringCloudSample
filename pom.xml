@@ -14,6 +14,7 @@
         <module>user-consumer</module>
         <module>eureka-server</module>
         <module>user-provider-demo1</module>
+        <module>gateway-service</module>
     </modules>
 
     <properties>
